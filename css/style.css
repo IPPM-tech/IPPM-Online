@@ -524,3 +524,61 @@ font-weight:bold;
 border-bottom:2px solid #FFD76A;
 
 }
+
+/* =====================================
+Statistics
+===================================== */
+
+.statistics{
+
+background:#ffffff;
+
+text-align:center;
+
+padding:80px 20px;
+
+}
+
+.stats-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+gap:30px;
+
+margin-top:40px;
+
+}
+
+.stats-grid div{
+
+background:#F8F6EF;
+
+padding:30px;
+
+border-radius:15px;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+}
+
+.counter{
+
+font-size:48px;
+
+font-weight:bold;
+
+color:#0B5D3B;
+
+margin-bottom:10px;
+
+}
+
+.stats-grid p{
+
+font-weight:600;
+
+color:#444;
+
+}
