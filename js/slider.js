@@ -51,9 +51,9 @@ heroImage.src = images[current];
 
     }
 
-    // Rotate every 7 seconds
+    // Rotate every 8 seconds
 
-    let slider = setInterval(changeImage,7000);
+    let slider = setInterval(changeImage,8000);
 
     // Pause when page is hidden
 
