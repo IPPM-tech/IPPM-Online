@@ -24,7 +24,9 @@ document.addEventListener("DOMContentLoaded", function () {
     "images/hero8.jpg"
 ];
 
-    let current = 0;
+    let current = Math.floor(Math.random() * images.length);
+
+heroImage.src = images[current];
 
     // Fade speed
     heroImage.style.transition = "opacity 1.2s ease";
