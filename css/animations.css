@@ -1,0 +1,322 @@
+/* =====================================================
+   IPPM Animation Styles
+   Institute of Public Peace and Management
+   ===================================================== */
+
+/* Global smooth transitions */
+
+*{
+    transition:all .35s ease;
+}
+
+/* Smooth scrolling */
+
+html{
+    scroll-behavior:smooth;
+}
+
+/* ---------------- Fade In ---------------- */
+
+.fade-in{
+    animation:fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(30px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ---------------- Slide Up ---------------- */
+
+.slide-up{
+    animation:slideUp .9s ease forwards;
+}
+
+@keyframes slideUp{
+
+0%{
+opacity:0;
+transform:translateY(60px);
+}
+
+100%{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ---------------- Floating ---------------- */
+
+.float{
+
+animation:floating 4s ease-in-out infinite;
+
+}
+
+@keyframes floating{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-10px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* ---------------- Hero Image Zoom ---------------- */
+
+.hero img{
+
+animation:heroZoom 15s linear infinite alternate;
+
+}
+
+@keyframes heroZoom{
+
+from{
+transform:scale(1);
+}
+
+to{
+transform:scale(1.08);
+}
+
+}
+
+/* ---------------- Logo Glow ---------------- */
+
+.logo img:hover{
+
+transform:scale(1.08) rotate(-3deg);
+
+filter:drop-shadow(0 0 12px rgba(200,155,60,.75));
+
+}
+
+/* ---------------- Navigation Hover ---------------- */
+
+.navbar a:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* ---------------- Buttons ---------------- */
+
+.button{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.button::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-120%;
+
+width:60%;
+
+height:100%;
+
+background:rgba(255,255,255,.35);
+
+transform:skewX(-25deg);
+
+}
+
+.button:hover::before{
+
+left:140%;
+
+transition:1s;
+
+}
+
+.button:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+}
+
+/* ---------------- Cards ---------------- */
+
+.focus .grid div{
+
+cursor:pointer;
+
+}
+
+.focus .grid div:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 15px 35px rgba(0,0,0,.18);
+
+}
+
+/* ---------------- QR Code ---------------- */
+
+.contact img{
+
+border-radius:12px;
+
+}
+
+.contact img:hover{
+
+transform:scale(1.08);
+
+}
+
+/* ---------------- Footer ---------------- */
+
+footer{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+footer::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:-100%;
+
+width:50%;
+
+height:100%;
+
+background:rgba(255,255,255,.08);
+
+transform:skewX(-20deg);
+
+animation:footerGlow 12s linear infinite;
+
+}
+
+@keyframes footerGlow{
+
+0%{
+left:-120%;
+}
+
+100%{
+left:150%;
+}
+
+}
+
+/* ---------------- Section Reveal ---------------- */
+
+.reveal{
+
+opacity:0;
+
+transform:translateY(60px);
+
+transition:1s;
+
+}
+
+.reveal.active{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+/* ---------------- Statistics Pulse ---------------- */
+
+.counter{
+
+font-size:3rem;
+
+font-weight:bold;
+
+color:#C89B3C;
+
+animation:pulse 2.5s infinite;
+
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.08);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+/* ---------------- Hero Text ---------------- */
+
+.hero-overlay h1{
+
+animation:fadeIn 1.5s ease;
+
+}
+
+.hero-overlay h2{
+
+animation:fadeIn 2s ease;
+
+}
+
+.hero-overlay p{
+
+animation:fadeIn 2.5s ease;
+
+}
+
+/* ---------------- Image Hover ---------------- */
+
+img{
+
+transition:transform .5s ease;
+
+}
+
+img:hover{
+
+transform:scale(1.02);
+
+}
