@@ -406,3 +406,121 @@ margin-top:40px;
 box-shadow:var(--shadow);
 
 }
+
+/* ==========================
+Sticky Navigation
+========================== */
+
+.sticky{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+right:0;
+
+background:#0B5D3B;
+
+box-shadow:0 6px 20px rgba(0,0,0,.2);
+
+z-index:999;
+
+}
+
+/* ==========================
+Back To Top
+========================== */
+
+#topButton{
+
+position:fixed;
+
+bottom:30px;
+
+right:30px;
+
+width:50px;
+
+height:50px;
+
+border:none;
+
+border-radius:50%;
+
+background:#C89B3C;
+
+color:white;
+
+font-size:22px;
+
+cursor:pointer;
+
+display:none;
+
+z-index:999;
+
+}
+
+#topButton:hover{
+
+background:#0B5D3B;
+
+}
+
+/* ==========================
+WhatsApp
+========================== */
+
+#whatsappButton{
+
+position:fixed;
+
+left:25px;
+
+bottom:30px;
+
+width:60px;
+
+height:60px;
+
+background:#25D366;
+
+color:white;
+
+font-size:30px;
+
+text-align:center;
+
+line-height:60px;
+
+border-radius:50%;
+
+text-decoration:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+z-index:999;
+
+}
+
+#whatsappButton:hover{
+
+transform:scale(1.1);
+
+}
+
+/* ==========================
+Active Menu
+========================== */
+
+.navbar a.active{
+
+color:#FFD76A;
+
+font-weight:bold;
+
+border-bottom:2px solid #FFD76A;
+
+}
