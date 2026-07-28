@@ -2,617 +2,610 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-      content="About the Institute of Public Peace and Management (IPPM)">
-
-<title>About IPPM</title>
-
-<link rel="icon"
-      href="images/favicon.png">
-
-<link rel="stylesheet"
-      href="css/style.css">
-
-<link rel="stylesheet"
-      href="css/responsive.css">
-
-<link rel="stylesheet"
-      href="css/animations.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About the Institute of Public Peace and Management (IPPM) - Professional membership institute advancing sustainable peace, ethical leadership, and management excellence">
+    <meta name="keywords" content="IPPM, Public Peace, Management Institute, Professional Membership, Nigeria, Leadership Training">
+    <title>About IPPM - Institute of Public Peace and Management</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        /* Enhanced styling for about page */
+        .breadcrumb {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            margin: 10px 0 30px 0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: #1a5276;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+        .content h2 {
+            color: #1a5276;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #f1c40f;
+            padding-bottom: 10px;
+            display: inline-block;
+        }
+        .content h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin: 15px 0 10px 0;
+        }
+        .content p {
+            color: #333;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin-bottom: 15px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 25px;
+        }
+        .card {
+            background: #fff;
+            border-radius: 10px;
+            padding: 25px 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-left: 4px solid #1a5276;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+        .card h3 {
+            color: #1a5276;
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .card p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+        }
+        .card .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .call-to-action {
+            background: linear-gradient(135deg, #1a5276, #2e86c1);
+            color: #fff;
+            padding: 50px 30px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 40px;
+        }
+        .call-to-action h2 {
+            color: #fff;
+            border-bottom-color: #f1c40f;
+        }
+        .call-to-action p {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .call-to-action .button {
+            background: #f1c40f;
+            color: #1a5276;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        .call-to-action .button:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        .stats-mini {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .stats-mini .stat-item {
+            text-align: center;
+        }
+        .stats-mini .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #1a5276;
+        }
+        .stats-mini .stat-label {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 5px;
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-content hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        .footer-content .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin: 15px 0;
+        }
+        .footer-content .contact-details span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #555;
+        }
+        .footer-content .contact-details a {
+            color: #1a5276;
+            text-decoration: none;
+        }
+        .footer-content .contact-details a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            .content h2 {
+                font-size: 1.6rem;
+            }
+            .stats-mini {
+                gap: 15px;
+                padding: 20px;
+            }
+            .stats-mini .stat-number {
+                font-size: 1.8rem;
+            }
+            .footer-content .contact-details {
+                flex-direction: column;
+                gap: 10px;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- ==========================================
-     HEADER CORRECTION NEEDED! WHY? ABOUT NOT SHOWING IN WEBSITE DISPLAY!
-=========================================== -->
+    <!-- ==========================================
+     HEADER - Navigation
+    =========================================== -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ippm-logo.png" alt="IPPM Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="about.html" class="active" data-lang="about">About</a></li>
+                <li><a href="membership.html" data-lang="membership">Membership</a></li>
+                <li><a href="training.html" data-lang="training">Training</a></li>
+                <li><a href="focus.html" data-lang="focus">Focus Areas</a></li>
+                <li><a href="contact.html" data-lang="contact">Contact</a></li>
+            </ul>
+            <div class="language">
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </nav>
+    </header>
 
-<header>
+    <!-- ==========================================
+     HERO SECTION
+    =========================================== -->
+    <section class="hero">
+        <img src="images/hero2.jpg" alt="About IPPM - Institute of Public Peace and Management">
+        <div class="hero-overlay">
+            <h1 data-lang="about">About IPPM</h1>
+            <h2 data-lang="institute">Institute of Public Peace and Management</h2>
+            <p data-lang="motto">Through Knowledge • Through Partnership • For Humanity</p>
+        </div>
+    </section>
 
-<nav class="navbar">
+    <!-- ==========================================
+     BREADCRUMB NAVIGATION
+    =========================================== -->
+    <section class="breadcrumb">
+        <p>
+            <a href="index.html">Home</a> &gt; 
+            <span>About IPPM</span>
+        </p>
+    </section>
 
-<div class="logo">
+    <!-- ==========================================
+     WELCOME SECTION
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Welcome to IPPM</h2>
+        <p>
+            The <strong>Institute of Public Peace and Management (IPPM)</strong> is an international professional membership institute committed to advancing sustainable peace, ethical leadership, professional excellence, innovation, research, capacity development and strategic partnerships.
+        </p>
+        <p>
+            Our programmes are designed to strengthen individuals, institutions and societies by promoting knowledge, collaboration and responsible leadership that contribute to lasting peace, socioeconomic development and human prosperity.
+        </p>
+    </section>
 
-<a href="index.html">
+    <!-- ==========================================
+     QUICK STATISTICS
+    =========================================== -->
+    <section class="content reveal">
+        <div class="stats-mini">
+            <div class="stat-item">
+                <div class="stat-number">2012</div>
+                <div class="stat-label">Year Established</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">50+</div>
+                <div class="stat-label">Professional Disciplines</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Official Languages</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Institutional Partners</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">6</div>
+                <div class="stat-label">Membership Grades</div>
+            </div>
+        </div>
+    </section>
 
-<img src="images/ippm-logo.png"
-     alt="IPPM Logo">
-
-</a>
-
-</div>
-
-<ul>
-
-<li>
-<a href="index.html"
-   data-lang="home">Home</a>
-</li>
-
-<li>
-<a href="about.html"
-   class="active"
-   data-lang="about">About</a>
-</li>
-
-<li>
-<a href="membership.html"
-   data-lang="membership">Membership</a>
-</li>
-
-<li>
-<a href="training.html"
-   data-lang="training">Training</a>
-</li>
-
-<li>
-<a href="focus.html"
-   data-lang="focus">Focus Areas</a>
-</li>
-
-<li>
-<a href="contact.html"
-   data-lang="contact">Contact</a>
-</li>
-
-</ul>
-
-<div class="language">
-
-<select id="languageSelector">
-
-<option value="en">English</option>
-
-<option value="fr">Français</option>
-
-<option value="es">Español</option>
-
-</select>
-
-</div>
-
-</nav>
-
-</header>
-
-<!-- ==========================================
-     HERO
-=========================================== -->
-
-<section class="hero">
-
-<img src="images/hero2.jpg"
-     alt="About IPPM">
-
-<div class="hero-overlay">
-
-<h1 data-lang="about">
-
-About IPPM
-
-</h1>
-
-<h2 data-lang="institute">
-
-Institute of Public Peace and Management
-
-</h2>
-
-<p data-lang="motto">
-
-Through Knowledge • Through Partnership • For Humanity
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ==========================================
-     BREADCRUMB
-=========================================== -->
-
-<section class="breadcrumb">
-
-<p>
-
-<a href="index.html">Home</a>
-
->
-
-About IPPM
-
-</p>
-
-</section>
-
-<!-- ==========================================
-     WELCOME
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>
-
-Welcome to IPPM
-
-</h2>
-
-<p>
-
-The <strong>Institute of Public Peace and Management (IPPM)</strong> is an international professional membership institute committed to advancing sustainable peace, ethical leadership, professional excellence, innovation, research, capacity development and strategic partnerships.
-
-</p>
-
-<p>
-
-Our programmes are designed to strengthen individuals, institutions and societies by promoting knowledge, collaboration and responsible leadership that contribute to lasting peace, socioeconomic development and human prosperity.
-
-</p>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      LEGAL STATUS
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Legal Status</h2>
+        <p>
+            The Institute of Public Peace and Management (IPPM) is a non-profit professional institute registered in Nigeria as a Company Limited by Guarantee.
+        </p>
+        <p>
+            Established in 2012, the Institute operates with the approval of the Federal Ministry of Justice and the Ministry of Education, promoting professional knowledge, research, management excellence and sustainable peace through education and strategic partnerships.
+        </p>
+    </section>
 
-<section class="content reveal">
+    <!-- ==========================================
+     VISION & MISSION
+    =========================================== -->
+    <section class="content reveal">
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-top: 20px;">
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-top: 4px solid #1a5276;">
+                <h2 style="border-bottom: none; padding-bottom: 0; display: block;">Our Vision</h2>
+                <p style="font-size: 1.1rem; margin-top: 10px;">
+                    To be a globally respected professional institute advancing sustainable peace, ethical leadership, management excellence, innovation and human prosperity through knowledge and strategic partnerships.
+                </p>
+            </div>
+            <div style="background: #f8f9fa; padding: 30px; border-radius: 10px; border-top: 4px solid #f1c40f;">
+                <h2 style="border-bottom: none; padding-bottom: 0; display: block;">Our Mission</h2>
+                <p style="font-size: 1.1rem; margin-top: 10px;">
+                    To build professional capacity through education, research, certification, consultancy, international collaboration and continuous professional development while promoting peace, integrity, innovation and sustainable socioeconomic progress.
+                </p>
+            </div>
+        </div>
+    </section>
 
-<h2>
-
-Legal Status
-
-</h2>
-
-<p>
-
-The Institute of Public Peace and Management (IPPM) is a non-profit professional institute registered in Nigeria as a Company Limited by Guarantee.
-
-</p>
-
-<p>
-
-Established in 2012, the Institute operates with the approval of the Federal Ministry of Justice and the Ministry of Education, promoting professional knowledge, research, management excellence and sustainable peace through education and strategic partnerships.
-
-</p>
-
-</section>
-
-<!-- ==========================================
-     VISION
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>
-
-Our Vision
-
-</h2>
-
-<p>
-
-To be a globally respected professional institute advancing sustainable peace, ethical leadership, management excellence, innovation and human prosperity through knowledge and strategic partnerships.
-
-</p>
-
-</section>
-
-<!-- ==========================================
-     MISSION
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>
-
-Our Mission
-
-</h2>
-
-<p>
-
-To build professional capacity through education, research, certification, consultancy, international collaboration and continuous professional development while promoting peace, integrity, innovation and sustainable socioeconomic progress.
-
-</p>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      CORE VALUES
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>
-
-Our Core Values
-
-</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>🕊 Peace</h3>
-
-<p>Promoting peaceful coexistence and sustainable development.</p>
-
-</div>
-
-<div class="card">
-
-<h3>⚖ Integrity</h3>
-
-<p>Maintaining honesty, ethics and accountability.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎓 Professionalism</h3>
-
-<p>Developing competent professionals through lifelong learning.</p>
-
-</div>
-
-<div class="card">
-
-<h3>💡 Innovation</h3>
-
-<p>Encouraging creative thinking and modern solutions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🤝 Partnership</h3>
-
-<p>Building strong national and international collaborations.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌍 Service</h3>
-
-<p>Serving humanity through knowledge, leadership and peace.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
-     WHY IPPM
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>
-
-Why Choose IPPM?
-
-</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>🌎 International Outlook</h3>
-
-<p>Building partnerships across nations and institutions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🏆 Professional Recognition</h3>
-
-<p>Membership grades that recognize competence and achievement.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🎯 Executive Leadership</h3>
-
-<p>Leadership programmes for professionals and executives.</p>
-
-</div>
-
-<div class="card">
-
-<h3>📚 Capacity Development</h3>
-
-<p>Training, seminars and professional certification.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🔬 Research & Innovation</h3>
-
-<p>Supporting policy research and evidence-based solutions.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🤝 Global Partnerships</h3>
-
-<p>Connecting members with international opportunities.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ========= PART 2 CONTINUES BELOW ========= -->
-  <!-- ==========================================
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Our Core Values</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="icon">🕊</span>
+                <h3>Peace</h3>
+                <p>Promoting peaceful coexistence and sustainable development.</p>
+            </div>
+            <div class="card">
+                <span class="icon">⚖</span>
+                <h3>Integrity</h3>
+                <p>Maintaining honesty, ethics and accountability.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🎓</span>
+                <h3>Professionalism</h3>
+                <p>Developing competent professionals through lifelong learning.</p>
+            </div>
+            <div class="card">
+                <span class="icon">💡</span>
+                <h3>Innovation</h3>
+                <p>Encouraging creative thinking and modern solutions.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🤝</span>
+                <h3>Partnership</h3>
+                <p>Building strong national and international collaborations.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌍</span>
+                <h3>Service</h3>
+                <p>Serving humanity through knowledge, leadership and peace.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
+     WHY CHOOSE IPPM
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Why Choose IPPM?</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="icon">🌎</span>
+                <h3>International Outlook</h3>
+                <p>Building partnerships across nations and institutions.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🏆</span>
+                <h3>Professional Recognition</h3>
+                <p>Membership grades that recognize competence and achievement.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🎯</span>
+                <h3>Executive Leadership</h3>
+                <p>Leadership programmes for professionals and executives.</p>
+            </div>
+            <div class="card">
+                <span class="icon">📚</span>
+                <h3>Capacity Development</h3>
+                <p>Training, seminars and professional certification.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🔬</span>
+                <h3>Research &amp; Innovation</h3>
+                <p>Supporting policy research and evidence-based solutions.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🤝</span>
+                <h3>Global Partnerships</h3>
+                <p>Connecting members with international opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==========================================
      STRATEGIC OBJECTIVES
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Strategic Objectives</h2>
+        <div class="grid">
+            <div class="card"><h3>1</h3><p>Promote sustainable peace and conflict prevention.</p></div>
+            <div class="card"><h3>2</h3><p>Advance professional competence and ethical leadership.</p></div>
+            <div class="card"><h3>3</h3><p>Support research, innovation and policy development.</p></div>
+            <div class="card"><h3>4</h3><p>Develop management capacity across public and private sectors.</p></div>
+            <div class="card"><h3>5</h3><p>Promote international cooperation and knowledge exchange.</p></div>
+            <div class="card"><h3>6</h3><p>Encourage continuous professional development and lifelong learning.</p></div>
+            <div class="card"><h3>7</h3><p>Build institutional partnerships with universities, polytechnics and professional bodies.</p></div>
+            <div class="card"><h3>8</h3><p>Contribute to socioeconomic prosperity through knowledge and innovation.</p></div>
+        </div>
+    </section>
 
-<section class="content reveal">
-
-<h2>Strategic Objectives</h2>
-
-<div class="grid">
-
-<div class="card"><h3>1</h3><p>Promote sustainable peace and conflict prevention.</p></div>
-
-<div class="card"><h3>2</h3><p>Advance professional competence and ethical leadership.</p></div>
-
-<div class="card"><h3>3</h3><p>Support research, innovation and policy development.</p></div>
-
-<div class="card"><h3>4</h3><p>Develop management capacity across public and private sectors.</p></div>
-
-<div class="card"><h3>5</h3><p>Promote international cooperation and knowledge exchange.</p></div>
-
-<div class="card"><h3>6</h3><p>Encourage continuous professional development and lifelong learning.</p></div>
-
-<div class="card"><h3>7</h3><p>Build institutional partnerships with universities, polytechnics and professional bodies.</p></div>
-
-<div class="card"><h3>8</h3><p>Contribute to socioeconomic prosperity through knowledge and innovation.</p></div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      PROFESSIONAL FOCUS AREAS
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Professional Focus Areas</h2>
+        <div class="grid">
+            <div class="card">🏦 Finance</div>
+            <div class="card">🏛 Banking</div>
+            <div class="card">📊 Accounting</div>
+            <div class="card">💻 Computing &amp; ICT</div>
+            <div class="card">🤖 Artificial Intelligence</div>
+            <div class="card">🕊 Peace &amp; Conflict Management</div>
+            <div class="card">⚖ Governance</div>
+            <div class="card">🎓 Education</div>
+            <div class="card">🏥 Healthcare</div>
+            <div class="card">🌾 Agriculture</div>
+            <div class="card">⚡ Energy</div>
+            <div class="card">🚢 Transport &amp; Logistics</div>
+            <div class="card">🏢 Public Administration</div>
+            <div class="card">📈 Entrepreneurship</div>
+            <div class="card">🔬 Research &amp; Innovation</div>
+        </div>
+    </section>
 
-<section class="content reveal">
-
-<h2>Professional Focus Areas</h2>
-
-<div class="grid">
-
-<div class="card">🏦 Finance</div>
-
-<div class="card">🏛 Banking</div>
-
-<div class="card">📊 Accounting</div>
-
-<div class="card">💻 Computing & ICT</div>
-
-<div class="card">🤖 Artificial Intelligence</div>
-
-<div class="card">🕊 Peace & Conflict Management</div>
-
-<div class="card">⚖ Governance</div>
-
-<div class="card">🎓 Education</div>
-
-<div class="card">🏥 Healthcare</div>
-
-<div class="card">🌾 Agriculture</div>
-
-<div class="card">⚡ Energy</div>
-
-<div class="card">🚢 Transport & Logistics</div>
-
-<div class="card">🏢 Public Administration</div>
-
-<div class="card">📈 Entrepreneurship</div>
-
-<div class="card">🔬 Research & Innovation</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      MEMBERSHIP BENEFITS
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Membership Benefits</h2>
+        <div class="grid">
+            <div class="card">
+                <span class="icon">🎖</span>
+                <h3>Professional Recognition</h3>
+                <p>Earn internationally respected membership designations.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🌍</span>
+                <h3>Global Networking</h3>
+                <p>Connect with professionals across Nigeria and the international community.</p>
+            </div>
+            <div class="card">
+                <span class="icon">📚</span>
+                <h3>Capacity Development</h3>
+                <p>Participate in executive education, seminars and workshops.</p>
+            </div>
+            <div class="card">
+                <span class="icon">✈</span>
+                <h3>International Exposure</h3>
+                <p>Benefit from exchange programmes and strategic partnerships.</p>
+            </div>
+            <div class="card">
+                <span class="icon">📖</span>
+                <h3>Publications</h3>
+                <p>Access research papers, policy briefs and professional resources.</p>
+            </div>
+            <div class="card">
+                <span class="icon">🏆</span>
+                <h3>Leadership Development</h3>
+                <p>Develop executive leadership and management competence.</p>
+            </div>
+        </div>
+    </section>
 
-<section class="content reveal">
+    <!-- ==========================================
+     MEMBERSHIP GRADES
+    =========================================== -->
+    <section class="content reveal">
+        <h2>Membership Grades</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-top: 20px;">
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Associate</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Entry-level professional grade</p>
+            </div>
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Professional Member</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Full professional standing</p>
+            </div>
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Senior Member</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Advanced professional recognition</p>
+            </div>
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Fellow</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Distinguished professional status</p>
+            </div>
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Honorary Fellow</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Honorary recognition</p>
+            </div>
+            <div style="background: #1a5276; color: #fff; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 style="color: #f1c40f; margin: 0 0 8px 0;">Plenipotentiary Fellow</h4>
+                <p style="color: #ddd; font-size: 0.9rem; margin: 0;">Highest professional grade</p>
+            </div>
+        </div>
+    </section>
 
-<h2>Membership Benefits</h2>
-
-<div class="grid">
-
-<div class="card">
-
-<h3>🎖 Professional Recognition</h3>
-
-<p>Earn internationally respected membership designations.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🌍 Global Networking</h3>
-
-<p>Connect with professionals across Nigeria and the international community.</p>
-
-</div>
-
-<div class="card">
-
-<h3>📚 Capacity Development</h3>
-
-<p>Participate in executive education, seminars and workshops.</p>
-
-</div>
-
-<div class="card">
-
-<h3>✈ International Exposure</h3>
-
-<p>Benefit from exchange programmes and strategic partnerships.</p>
-
-</div>
-
-<div class="card">
-
-<h3>📖 Publications</h3>
-
-<p>Access research papers, policy briefs and professional resources.</p>
-
-</div>
-
-<div class="card">
-
-<h3>🏆 Leadership Development</h3>
-
-<p>Develop executive leadership and management competence.</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      INTERNATIONAL OUTLOOK
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal">
+        <h2>International Outlook</h2>
+        <p>
+            IPPM is committed to building a globally connected professional community. The Institute promotes multilingual engagement in English, French and Spanish while establishing partnerships with universities, polytechnics, governments, professional bodies, development organizations and international institutions.
+        </p>
+        <p>
+            Through conferences, professional certification, consultancy, research and international exchange programmes, IPPM seeks to become a recognised global platform for peace, management and sustainable development.
+        </p>
+    </section>
 
-<section class="content reveal">
-
-<h2>International Outlook</h2>
-
-<p>
-
-IPPM is committed to building a globally connected professional community. The Institute promotes multilingual engagement in English, French and Spanish while establishing partnerships with universities, polytechnics, governments, professional bodies, development organizations and international institutions.
-
-</p>
-
-<p>
-
-Through conferences, professional certification, consultancy, research and international exchange programmes, IPPM seeks to become a recognised global platform for peace, management and sustainable development.
-
-</p>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      CALL TO ACTION
-=========================================== -->
+    =========================================== -->
+    <section class="content reveal call-to-action">
+        <h2>Join the IPPM Community</h2>
+        <p>
+            Become part of an international network of professionals dedicated to advancing Peace, Progress and Prosperity through knowledge, partnership and service.
+        </p>
+        <p>
+            <strong style="color: #f1c40f;">Through Knowledge • Through Partnership • For Humanity</strong>
+        </p>
+        <a href="membership.html" class="button">Become a Member</a>
+    </section>
 
-<section class="content reveal call-to-action">
-
-<h2>
-
-Join the IPPM Community
-
-</h2>
-
-<p>
-
-Become part of an international network of professionals dedicated to advancing Peace, Progress and Prosperity through knowledge, partnership and service.
-
-</p>
-
-<p>
-
-<strong>
-
-Through Knowledge • Through Partnership • For Humanity
-
-</strong>
-
-</p>
-
-<a href="membership.html" class="button">
-
-Become a Member
-
-</a>
-
-</section>
-
-<!-- ==========================================
+    <!-- ==========================================
      FOOTER
-=========================================== -->
+    =========================================== -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="color: #1a5276; font-size: 1.4rem; margin-bottom: 10px;">
+                Institute of Public Peace and Management (IPPM)
+            </h3>
+            <p style="font-size: 1.2rem; color: #2c3e50; font-weight: 500;">
+                Peace • Progress • Prosperity
+            </p>
+            <p style="color: #555; font-style: italic;">
+                Through Knowledge • Through Partnership • For Humanity
+            </p>
 
-<footer>
+            <hr>
 
-<div class="footer-content">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; margin: 20px 0;">
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">📍 Address</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.6;">
+                        Sheraton Hotel,<br>
+                        30 Mobolaji Bank Anthony Way,<br>
+                        Ikeja, Lagos, Nigeria.
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">📞 Telephone</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <a href="tel:+2347052526342" style="color: #1a5276; text-decoration: none;">+234 705 252 6342</a><br>
+                        <a href="tel:+2347066678914" style="color: #1a5276; text-decoration: none;">+234 706 667 8914</a><br>
+                        <a href="tel:+2348028198223" style="color: #1a5276; text-decoration: none;">+234 802 819 8223</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">✉ Email</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <a href="mailto:registrar.ippm@gmail.com" style="color: #1a5276; text-decoration: none;">registrar.ippm@gmail.com</a><br>
+                        <small style="color: #888;">For all official correspondence</small>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">🌐 Website</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <a href="https://www.ippm.org.ng" style="color: #1a5276; text-decoration: none;">www.ippm.org.ng</a>
+                    </p>
+                </div>
+            </div>
 
-<h3>
+            <hr>
 
-Institute of Public Peace and Management (IPPM)
+            <p style="font-size: 0.85rem; color: #888; margin-top: 15px;">
+                &copy; 2026 Institute of Public Peace and Management (IPPM). All Rights Reserved.
+            </p>
+            <p style="font-size: 0.8rem; color: #999; margin-top: 5px;">
+                Professional Excellence • Sustainable Peace • Global Impact
+            </p>
+        </div>
+    </footer>
 
-</h3>
+    <!-- ==========================================
+     JAVASCRIPT FILES
+    =========================================== -->
+    <script src="js/script.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/language.js"></script>
 
-<p>
-
-Peace • Progress • Prosperity
-
-</p>
-
-<p>
-
-Through Knowledge • Through Partnership • For Humanity
-
-</p>
-
-<hr>
-
-<p>
-
-Sheraton Hotel,
-
-30 Mobolaji Bank Anthony Way,
-
-Ikeja, Lagos, Nigeria.
-
-</p>
-
-<p>
-
-Tel:
-
-+234 705 252 6342 |
-
-+
+</body>
+</html>
