@@ -2,548 +2,472 @@
 <html lang="en">
 
 <head>
-
-<meta charset="UTF-8">
-
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-
-<meta name="description"
-      content="IPPM Professional Development Centre">
-
-<title>Training | Institute of Public Peace and Management</title>
-
-<link rel="icon" href="images/favicon.png">
-
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/responsive.css">
-<link rel="stylesheet" href="css/animations.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="IPPM Professional Development Centre – Training, Executive Education, Leadership Development">
+    <meta name="keywords" content="IPPM, Training, Professional Development, Leadership, Nigeria, Executive Education">
+    <title>Training | Institute of Public Peace and Management (IPPM)</title>
+    <link rel="icon" href="images/favicon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <style>
+        /* Additional training-specific styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+        table th, table td {
+            padding: 15px 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+        table th {
+            background: #1a5276;
+            color: #fff;
+            font-weight: 600;
+        }
+        table tr:hover {
+            background: #f8f9fa;
+        }
+        .newsletter {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 20px;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .newsletter input {
+            flex: 1 1 200px;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            outline: none;
+            transition: border 0.3s;
+        }
+        .newsletter input:focus {
+            border-color: #1a5276;
+        }
+        .newsletter .button {
+            padding: 12px 30px;
+            background: #1a5276;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .newsletter .button:hover {
+            background: #2e86c1;
+        }
+        /* Hide honeypot */
+        .honeypot {
+            display: none !important;
+        }
+        .breadcrumb {
+            background: #f5f5f5;
+            padding: 15px 20px;
+            margin: 10px 0 30px 0;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .breadcrumb a {
+            color: #1a5276;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+        .card h4 {
+            color: #2c3e50;
+            margin: 5px 0 10px 0;
+            font-weight: 500;
+        }
+        .card .button {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 8px 20px;
+            background: #1a5276;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .card .button:hover {
+            background: #2e86c1;
+        }
+        .call-to-action .button {
+            background: #f1c40f;
+            color: #1a5276;
+            padding: 14px 40px;
+            border-radius: 30px;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 15px;
+            transition: all 0.3s ease;
+        }
+        .call-to-action .button:hover {
+            background: #fff;
+            transform: scale(1.05);
+        }
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .footer-content hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 20px 0;
+        }
+        @media (max-width: 768px) {
+            .newsletter {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .newsletter input, .newsletter .button {
+                width: 100%;
+            }
+            table th, table td {
+                padding: 10px 12px;
+                font-size: 0.9rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
-
-<header>
-
-<nav class="navbar">
-
-<div class="logo">
-
-<a href="index.html">
-
-<img src="images/ippm-logo.png"
-alt="IPPM Logo">
-
-</a>
-
-</div>
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="membership.html">Membership</a></li>
-
-<li><a href="training.html" class="active">Training</a></li>
-
-<li><a href="focus.html">Focus Areas</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-</header>
-
-<!-- ================= HERO ================= -->
-
-<section class="hero">
-
-<img src="images/hero4.jpg"
-alt="Training">
-
-<div class="hero-overlay">
-
-<h1>
-
-IPPM Professional Development Centre
-
-</h1>
-
-<h2>
-
-Professional Development Series (PDS)
-
-</h2>
-
-<p>
-
-Building Leaders Through Knowledge • Partnership • Professional Excellence
-
-</p>
-
-</div>
-
-</section>
-
-<!-- ================= INTRODUCTION ================= -->
-
-<section class="content reveal">
-
-<h2>
-
-Welcome to the IPPM Professional Development Centre
-
-</h2>
-
-<p>
-
-The Institute of Public Peace and Management (IPPM) coordinates executive education, professional development, leadership training, research seminars, conferences and international knowledge exchange programmes designed to strengthen professionals, institutions and communities.
-
-</p>
-
-<p>
-
-Our Professional Development Series (PDS) equips participants with practical knowledge, strategic insights and internationally relevant skills that contribute to peace, productivity and sustainable national development.
-
-</p>
-
-</section>
-
-<!-- ================= FEATURED EVENTS ================= -->
-
-<section class="content reveal">
-
-<h2>
-
-2026 Featured Programmes
-
-</h2>
-
-<div class="grid">
-
-<!-- PDS 001 -->
-
-<div class="card">
-
-<h3>
-
-PDS 001
-
-</h3>
-
-<h4>
-
-Saturday, 29 August 2026
-
-</h4>
-
-<p>
-
-<strong>
-
-Unlocking Growth Opportunities: The Role of the Bank of Industry (BOI) in Financing Entrepreneurs, Professionals and Nigeria's Productive Economy
-
-</strong>
-
-</p>
-
-<p>
-
-A practical seminar exploring financing opportunities, enterprise growth, productivity and development finance.
-
-</p>
-
-<p>
-
-<em>Keynote Speaker: Senior Official, Bank of Industry (Invitation Extended / Subject to Confirmation)</em>
-
-</p>
-
-<a href="contact.html"
-class="button">
-
-Register Interest
-
-</a>
-
-</div>
-
-<!-- PDS 002 -->
-
-<div class="card">
-
-<h3>
-
-PDS 002
-
-</h3>
-
-<h4>
-
-25–26 September 2026
-
-</h4>
-
-<p>
-
-<strong>
-
-Professional Training & Membership Induction
-
-</strong>
-
-</p>
-
-<p>
-
-Executive development, ethics, strategic leadership, management, public peace, professional practice and membership induction.
-
-</p>
-
-<a href="membership.html"
-class="button">
-
-Become a Member
-
-</a>
-
-</div>
-
-<!-- PDS 003 -->
-
-<div class="card">
-
-<h3>
-
-PDS 003
-
-</h3>
-
-<h4>
-
-Saturday, 28 November 2026
-
-</h4>
-
-<p>
-
-<strong>
-
-Executive Leadership, Governance and National Development Forum
-
-</strong>
-
-</p>
-
-<p>
-
-A high-level forum promoting ethical leadership, institutional excellence, strategic partnerships and national prosperity.
-
-</p>
-
-<a href="contact.html"
-class="button">
-
-Reserve Your Seat
-
-</a>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- ================= PRESIDENT'S CALENDAR ================= -->
-
-<section class="content reveal">
-
-<h2>
-
-Annual President's Calendar – 2026
-
-</h2>
-
-<table>
-
-<thead>
-
-<tr>
-
-<th>Month</th>
-
-<th>Programme</th>
-
-</tr>
-
-</thead>
-
-<tbody>
-
-<tr>
-
-<td>August</td>
-
-<td>PDS 001 – BOI Development Finance Seminar</td>
-
-</tr>
-
-<tr>
-
-<td>September</td>
-
-<td>PDS 002 – Professional Training & Membership Induction</td>
-
-</tr>
-
-<tr>
-
-<td>November</td>
-
-<td>PDS 003 – Executive Leadership, Governance & National Development Forum</td>
-
-</tr>
-
-</tbody>
-
-</table>
-
-<p style="margin-top:20px;">
-
-Additional workshops, webinars, certification programmes and international exchange activities will be announced throughout the year.
-
-</p>
-
-</section>
-
-<!-- ======== PART 2 CONTINUES BELOW ======== -->
-<!-- ==========================================
-TRAINING CATEGORIES
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>Professional Development Areas</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>💼 Executive Management</h3>
-<p>Leadership, strategic planning, organizational excellence and executive decision-making.</p>
-</div>
-
-<div class="card">
-<h3>🕊 Peace & Conflict Management</h3>
-<p>Conflict prevention, mediation, negotiation and peacebuilding.</p>
-</div>
-
-<div class="card">
-<h3>📊 Finance, Banking & Accounting</h3>
-<p>Development finance, banking operations, accounting, taxation and financial management.</p>
-</div>
-
-<div class="card">
-<h3>💻 Computing & Digital Transformation</h3>
-<p>Artificial Intelligence, cybersecurity, digital governance and emerging technologies.</p>
-</div>
-
-<div class="card">
-<h3>📚 Research & Policy</h3>
-<p>Research methods, public policy, monitoring and evaluation, publications.</p>
-</div>
-
-<div class="card">
-<h3>🌍 International Development</h3>
-<p>Global partnerships, SDGs, institutional collaboration and international exchange programmes.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
-LEARNING FORMATS
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>Flexible Learning Formats</h2>
-
-<div class="grid">
-
-<div class="card">
-<h3>🏨 Classroom Training</h3>
-<p>Face-to-face executive programmes.</p>
-</div>
-
-<div class="card">
-<h3>💻 Live Online Learning</h3>
-<p>Interactive instructor-led virtual classes.</p>
-</div>
-
-<div class="card">
-<h3>🌐 Hybrid Learning</h3>
-<p>Attend physically or online from anywhere in the world.</p>
-</div>
-
-<div class="card">
-<h3>🎥 Digital Learning Library</h3>
-<p>Recorded lectures and learning resources (Coming Soon).</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
-STRATEGIC INSTITUTIONAL PARTNERSHIPS
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>Strategic Institutional Partnerships</h2>
-
-<p>
-
-IPPM is committed to building sustainable partnerships with organizations that share our vision of strengthening professional capacity, promoting peace, supporting innovation and advancing socioeconomic development.
-
-</p>
-
-<div class="grid">
-
-<div class="card">
-<h3>🎓 Universities</h3>
-</div>
-
-<div class="card">
-<h3>🏛 Polytechnics</h3>
-</div>
-
-<div class="card">
-<h3>📘 Colleges of Education</h3>
-</div>
-
-<div class="card">
-<h3>🏦 Development Finance Institutions</h3>
-</div>
-
-<div class="card">
-<h3>🏢 Professional Bodies</h3>
-</div>
-
-<div class="card">
-<h3>🏛 Government Ministries, Departments & Agencies</h3>
-</div>
-
-<div class="card">
-<h3>🌍 International Development Partners</h3>
-</div>
-
-<div class="card">
-<h3>🤝 Corporate Organizations</h3>
-</div>
-
-</div>
-
-</section>
-
-<!-- ==========================================
-FIVE-YEAR VISION
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>IPPM Five-Year Vision (2026–2030)</h2>
-
-<ul>
-
-<li>Expand professional membership across Nigeria, Africa and internationally.</li>
-
-<li>Develop accredited Professional Development Centres.</li>
-
-<li>Launch multilingual digital learning platforms in English, French and Spanish.</li>
-
-<li>Strengthen collaborations with universities, governments and international organizations.</li>
-
-<li>Promote research, innovation, peacebuilding and sustainable development.</li>
-
-<li>Deliver globally respected executive education and professional certification programmes.</li>
-
-</ul>
-
-</section>
-
-<!-- ==========================================
-NEWSLETTER
-=========================================== -->
-
-<section class="content reveal">
-
-<h2>Stay Connected</h2>
-
-<p>
-
-Subscribe to receive updates on training programmes, conferences, membership opportunities and international partnerships.
-
-</p>
-
-<form class="newsletter">
-
-<input
-type="text"
-placeholder="Full Name">
-
-<input
-type="email"
-placeholder="Email Address">
-
-<input
-type="text"
-placeholder="Country">
-
-<button class="button">
-
-Subscribe
-
-</button>
-
-</form>
-
-</section>
-
-<!-- ==========================================
-FINAL CALL TO ACTION
-=========================================== -->
-
-<section class="content reveal call-to-action">
-
-<h2>
-
-Invest in Your Future
-
-</h2>
-
-<p>
-
-Professional excellence begins with continuous learning.
-
-Join the IPPM Professional Development Series and become part of an international network committed to Peace, Progress and Prosperity.
-
-</p>
-
-<a href="membership.html"
-class="button">
-
-Become a Member
-
-</a>
-
-</section>
-
-<!-- =================================
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/ippm-logo.png" alt="IPPM Logo">
+                </a>
+            </div>
+            <ul>
+                <li><a href="index.html" data-lang="home">Home</a></li>
+                <li><a href="about.html" data-lang="about">About</a></li>
+                <li><a href="membership.html" data-lang="membership">Membership</a></li>
+                <li><a href="training.html" class="active" data-lang="training">Training</a></li>
+                <li><a href="focus.html" data-lang="focus">Focus Areas</a></li>
+                <li><a href="contact.html" data-lang="contact">Contact</a></li>
+            </ul>
+            <div class="language">
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                </select>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ================= BREADCRUMB ================= -->
+    <section class="breadcrumb">
+        <p>
+            <a href="index.html">Home</a> &gt;
+            <span>Training</span>
+        </p>
+    </section>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <img src="images/hero4.jpg" alt="Training at IPPM">
+        <div class="hero-overlay">
+            <h1 data-lang="training_title">IPPM Professional Development Centre</h1>
+            <h2 data-lang="training_sub">Professional Development Series (PDS)</h2>
+            <p data-lang="training_motto">Building Leaders Through Knowledge • Partnership • Professional Excellence</p>
+        </div>
+    </section>
+
+    <!-- ================= INTRODUCTION ================= -->
+    <section class="content reveal">
+        <h2 data-lang="welcome_training">Welcome to the IPPM Professional Development Centre</h2>
+        <p data-lang="training_intro1">
+            The Institute of Public Peace and Management (IPPM) coordinates executive education, professional development, leadership training, research seminars, conferences and international knowledge exchange programmes designed to strengthen professionals, institutions and communities.
+        </p>
+        <p data-lang="training_intro2">
+            Our Professional Development Series (PDS) equips participants with practical knowledge, strategic insights and internationally relevant skills that contribute to peace, productivity and sustainable national development.
+        </p>
+    </section>
+
+    <!-- ================= FEATURED EVENTS ================= -->
+    <section class="content reveal">
+        <h2 data-lang="featured_progs">2026 Featured Programmes</h2>
+        <div class="grid">
+
+            <!-- PDS 001 -->
+            <div class="card">
+                <h3 data-lang="pds001">PDS 001</h3>
+                <h4 data-lang="pds001_date">Saturday, 29 August 2026</h4>
+                <p>
+                    <strong data-lang="pds001_title">Unlocking Growth Opportunities: The Role of the Bank of Industry (BOI) in Financing Entrepreneurs, Professionals and Nigeria's Productive Economy</strong>
+                </p>
+                <p data-lang="pds001_desc">
+                    A practical seminar exploring financing opportunities, enterprise growth, productivity and development finance.
+                </p>
+                <p data-lang="pds001_speaker">
+                    <em>Keynote Speaker: Senior Official, Bank of Industry (Invitation Extended / Subject to Confirmation)</em>
+                </p>
+                <a href="contact.html" class="button" data-lang="register_interest">Register Interest</a>
+            </div>
+
+            <!-- PDS 002 -->
+            <div class="card">
+                <h3 data-lang="pds002">PDS 002</h3>
+                <h4 data-lang="pds002_date">25–26 September 2026</h4>
+                <p>
+                    <strong data-lang="pds002_title">Professional Training &amp; Membership Induction</strong>
+                </p>
+                <p data-lang="pds002_desc">
+                    Executive development, ethics, strategic leadership, management, public peace, professional practice and membership induction.
+                </p>
+                <a href="membership.html" class="button" data-lang="become_member">Become a Member</a>
+            </div>
+
+            <!-- PDS 003 -->
+            <div class="card">
+                <h3 data-lang="pds003">PDS 003</h3>
+                <h4 data-lang="pds003_date">Saturday, 28 November 2026</h4>
+                <p>
+                    <strong data-lang="pds003_title">Executive Leadership, Governance and National Development Forum</strong>
+                </p>
+                <p data-lang="pds003_desc">
+                    A high-level forum promoting ethical leadership, institutional excellence, strategic partnerships and national prosperity.
+                </p>
+                <a href="contact.html" class="button" data-lang="reserve_seat">Reserve Your Seat</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ================= PRESIDENT'S CALENDAR ================= -->
+    <section class="content reveal">
+        <h2 data-lang="pres_calendar">Annual President's Calendar – 2026</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th data-lang="month">Month</th>
+                    <th data-lang="programme">Programme</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-lang="august">August</td>
+                    <td data-lang="aug_prog">PDS 001 – BOI Development Finance Seminar</td>
+                </tr>
+                <tr>
+                    <td data-lang="september">September</td>
+                    <td data-lang="sep_prog">PDS 002 – Professional Training &amp; Membership Induction</td>
+                </tr>
+                <tr>
+                    <td data-lang="november">November</td>
+                    <td data-lang="nov_prog">PDS 003 – Executive Leadership, Governance &amp; National Development Forum</td>
+                </tr>
+            </tbody>
+        </table>
+        <p style="margin-top:20px;" data-lang="additional_events">
+            Additional workshops, webinars, certification programmes and international exchange activities will be announced throughout the year.
+        </p>
+    </section>
+
+    <!-- ================= TRAINING CATEGORIES ================= -->
+    <section class="content reveal">
+        <h2 data-lang="prof_dev_areas">Professional Development Areas</h2>
+        <div class="grid">
+            <div class="card">
+                <h3 data-lang="area_exec">💼 Executive Management</h3>
+                <p data-lang="area_exec_desc">Leadership, strategic planning, organizational excellence and executive decision-making.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="area_peace">🕊 Peace &amp; Conflict Management</h3>
+                <p data-lang="area_peace_desc">Conflict prevention, mediation, negotiation and peacebuilding.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="area_finance">📊 Finance, Banking &amp; Accounting</h3>
+                <p data-lang="area_finance_desc">Development finance, banking operations, accounting, taxation and financial management.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="area_ict">💻 Computing &amp; Digital Transformation</h3>
+                <p data-lang="area_ict_desc">Artificial Intelligence, cybersecurity, digital governance and emerging technologies.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="area_research">📚 Research &amp; Policy</h3>
+                <p data-lang="area_research_desc">Research methods, public policy, monitoring and evaluation, publications.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="area_intl">🌍 International Development</h3>
+                <p data-lang="area_intl_desc">Global partnerships, SDGs, institutional collaboration and international exchange programmes.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= LEARNING FORMATS ================= -->
+    <section class="content reveal">
+        <h2 data-lang="learning_formats">Flexible Learning Formats</h2>
+        <div class="grid">
+            <div class="card">
+                <h3 data-lang="format_classroom">🏨 Classroom Training</h3>
+                <p data-lang="format_classroom_desc">Face-to-face executive programmes.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="format_online">💻 Live Online Learning</h3>
+                <p data-lang="format_online_desc">Interactive instructor-led virtual classes.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="format_hybrid">🌐 Hybrid Learning</h3>
+                <p data-lang="format_hybrid_desc">Attend physically or online from anywhere in the world.</p>
+            </div>
+            <div class="card">
+                <h3 data-lang="format_digital">🎥 Digital Learning Library</h3>
+                <p data-lang="format_digital_desc">Recorded lectures and learning resources (Coming Soon).</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= STRATEGIC PARTNERSHIPS ================= -->
+    <section class="content reveal">
+        <h2 data-lang="strategic_partners">Strategic Institutional Partnerships</h2>
+        <p data-lang="partners_intro">
+            IPPM is committed to building sustainable partnerships with organizations that share our vision of strengthening professional capacity, promoting peace, supporting innovation and advancing socioeconomic development.
+        </p>
+        <div class="grid">
+            <div class="card"><h3 data-lang="partner_universities">🎓 Universities</h3></div>
+            <div class="card"><h3 data-lang="partner_polytechnics">🏛 Polytechnics</h3></div>
+            <div class="card"><h3 data-lang="partner_colleges">📘 Colleges of Education</h3></div>
+            <div class="card"><h3 data-lang="partner_devfinance">🏦 Development Finance Institutions</h3></div>
+            <div class="card"><h3 data-lang="partner_profbody">🏢 Professional Bodies</h3></div>
+            <div class="card"><h3 data-lang="partner_govt">🏛 Government Ministries, Departments &amp; Agencies</h3></div>
+            <div class="card"><h3 data-lang="partner_intl">🌍 International Development Partners</h3></div>
+            <div class="card"><h3 data-lang="partner_corporate">🤝 Corporate Organizations</h3></div>
+        </div>
+    </section>
+
+    <!-- ================= FIVE-YEAR VISION ================= -->
+    <section class="content reveal">
+        <h2 data-lang="five_year_vision">IPPM Five-Year Vision (2026–2030)</h2>
+        <ul data-lang="vision_list" style="list-style-type: none; padding-left: 0; line-height: 2;">
+            <li>✅ Expand professional membership across Nigeria, Africa and internationally.</li>
+            <li>✅ Develop accredited Professional Development Centres.</li>
+            <li>✅ Launch multilingual digital learning platforms in English, French and Spanish.</li>
+            <li>✅ Strengthen collaborations with universities, governments and international organizations.</li>
+            <li>✅ Promote research, innovation, peacebuilding and sustainable development.</li>
+            <li>✅ Deliver globally respected executive education and professional certification programmes.</li>
+        </ul>
+    </section>
+
+    <!-- ================= NEWSLETTER WITH SPAM PROTECTION ================= -->
+    <section class="content reveal">
+        <h2 data-lang="stay_connected">Stay Connected</h2>
+        <p data-lang="subscribe_intro">
+            Subscribe to receive updates on training programmes, conferences, membership opportunities and international partnerships.
+        </p>
+        <form class="newsletter" action="#" method="POST">
+            <!-- Honeypot field (hidden from humans) -->
+            <input type="text" name="website" class="honeypot" aria-hidden="true" tabindex="-1" autocomplete="off">
+            <!-- CSRF token placeholder (will be added server-side) -->
+            <input type="hidden" name="_token" value="generated_token_here">
+            <input type="text" name="fullname" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+            <input type="text" name="country" placeholder="Country">
+            <button type="submit" class="button" data-lang="subscribe_btn">Subscribe</button>
+        </form>
+        <p style="font-size:0.85rem; color:#888; margin-top:10px;" data-lang="privacy_note">
+            We respect your privacy. You can unsubscribe at any time.
+        </p>
+    </section>
+
+    <!-- ================= FINAL CALL TO ACTION ================= -->
+    <section class="content reveal call-to-action">
+        <h2 data-lang="invest_future">Invest in Your Future</h2>
+        <p data-lang="cta_text">
+            Professional excellence begins with continuous learning.<br>
+            Join the IPPM Professional Development Series and become part of an international network committed to Peace, Progress and Prosperity.
+        </p>
+        <a href="membership.html" class="button" data-lang="become_member_cta">Become a Member</a>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-content">
+            <h3 style="color: #1a5276; font-size: 1.4rem; margin-bottom: 10px;">
+                Institute of Public Peace and Management (IPPM)
+            </h3>
+            <p style="font-size: 1.2rem; color: #2c3e50; font-weight: 500;">
+                Peace • Progress • Prosperity
+            </p>
+            <p style="color: #555; font-style: italic;">
+                Through Knowledge • Through Partnership • For Humanity
+            </p>
+
+            <hr>
+
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; margin: 20px 0;">
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">📍 Address</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.6;">
+                        Sheraton Hotel,<br>
+                        30 Mobolaji Bank Anthony Way,<br>
+                        Ikeja, Lagos, Nigeria.
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">📞 Telephone</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <a href="tel:+2347052526342" style="color: #1a5276; text-decoration: none;">+234 705 252 6342</a><br>
+                        <a href="tel:+2347066678914" style="color: #1a5276; text-decoration: none;">+234 706 667 8914</a><br>
+                        <a href="tel:+2348028198223" style="color: #1a5276; text-decoration: none;">+234 802 819 8223</a>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">✉ Email</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <!-- PUBLIC-FACING (spam-resistant: forwards internally) -->
+                        <a href="mailto:info@ippm.org.ng" style="color: #1a5276; text-decoration: none;">info@ippm.org.ng</a><br>
+                        <small style="color: #888;">For all official correspondence</small>
+                    </p>
+                </div>
+                <div>
+                    <h4 style="color: #1a5276; margin-bottom: 10px;">🌐 Website</h4>
+                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
+                        <a href="https://www.ippm.org.ng" style="color: #1a5276; text-decoration: none;">www.ippm.org.ng</a>
+                    </p>
+                </div>
+            </div>
+
+            <hr>
+
+            <p style="font-size: 0.85rem; color: #888; margin-top: 15px;">
+                &copy; 2026 Institute of Public Peace and Management (IPPM). All Rights Reserved.
+            </p>
+            <p style="font-size: 0.8rem; color: #999; margin-top: 5px;">
+                Professional Excellence • Sustainable Peace • Global Impact
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script src="js/script.js"></script>
+    <script src="js/counter.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/language.js"></script>
+
+</body>
+</html>
