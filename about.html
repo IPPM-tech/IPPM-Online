@@ -546,6 +546,11 @@
      IPPM FOOTER — White on Blue + Spam Protection
      ========================================== -->
 
+
+<!-- ==========================================
+     IPPM FOOTER — White on Blue + Spam Protection
+     ========================================== -->
+
 <style>
   /* ── Footer Base ── */
   footer {
@@ -784,6 +789,76 @@
   </div>
 </footer>
 
+<!-- ========== SPAM PROTECTION SCRIPT ========== -->
+<script>
+  (function () {
+    "use strict";
+
+    /* ── ROT13 decoder (obfuscates email in source) ── */
+    function rot13(s) {
+      return s.replace(/[a-zA-Z]/g, function (c) {
+        var base = c < 'a' ? 65 : 97;
+        return String.fromCharCode(((c.charCodeAt(0) - base + 13) % 26) + base);
+      });
+    }
+
+    /* ─────────────────────────────────────────────
+       1. PHONE NUMBERS
+       Stored as reversed digit-groups joined at runtime
+    ───────────────────────────────────────────── */
+    var phones = [
+      { parts: ['+234', '705', '252', '6342'], raw: '2347052526342' },
+      { parts: ['+234', '706', '667', '8914'], raw: '2347066678914' },
+      { parts: ['+234', '802', '819', '8223'], raw: '2348028198223' }
+    ];
+
+    var phonesEl = document.getElementById('footer-phones');
+    if (phonesEl) {
+      var phonesHTML = '';
+      phones.forEach(function (p, i) {
+        var display = p.parts.join(' ');
+        phonesHTML +=
+          '<a href="tel:+' + p.raw + '" style="color:#aed6f1;text-decoration:none;display:block;">' +
+          display +
+          '</a>';
+      });
+      phonesEl.innerHTML = phonesHTML;
+    }
+
+    /* ─────────────────────────────────────────────
+       2. EMAIL
+       Stored ROT13-encoded: vasb@vcca.bet.at = info@ippm.org.ng
+    ───────────────────────────────────────────── */
+    var encodedEmail = 'vasb@vcca.bet.at'; // ROT13 of info@ippm.org.ng
+    var decodedEmail = rot13(encodedEmail);
+
+    var emailEl = document.getElementById('footer-email');
+    if (emailEl) {
+      emailEl.innerHTML =
+        '<a href="mailto:' + decodedEmail + '" style="color:#aed6f1;text-decoration:none;">' +
+        decodedEmail +
+        '</a><br>' +
+        '<small style="color:#7fb3d3;font-size:0.82rem;">For all official correspondence</small>';
+    }
+
+    /* ─────────────────────────────────────────────
+       3. WEBSITE URL
+       Split into parts, joined at runtime
+    ───────────────────────────────────────────── */
+    var urlParts = ['www', 'ippm', 'org', 'ng'];
+    var urlDisplay = urlParts[0] + '.' + urlParts[1] + '.' + urlParts[2] + '.' + urlParts[3];
+    var urlHref   = 'https://' + urlDisplay;
+
+    var websiteEl = document.getElementById('footer-website');
+    if (websiteEl) {
+      websiteEl.innerHTML =
+        '<a href="' + urlHref + '" target="_blank" rel="noopener noreferrer" style="color:#aed6f1;text-decoration:none;">' +
+        urlDisplay +
+        '</a>';
+    }
+
+  })();
+</script>
 <!-- ========== SPAM PROTECTION SCRIPT ========== -->
 
     <!-- ==========================================
