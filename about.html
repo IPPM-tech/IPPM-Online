@@ -542,63 +542,249 @@
     <!-- ==========================================
      FOOTER - CORRECTED with info@ippm.org.ng
     =========================================== -->
-    <footer>
-        <div class="footer-content">
-            <h3 style="color: #1a5276; font-size: 1.4rem; margin-bottom: 10px;">
-                Institute of Public Peace and Management (IPPM)
-            </h3>
-            <p style="font-size: 1.2rem; color: #2c3e50; font-weight: 500;">
-                Peace • Progress • Prosperity
-            </p>
-            <p style="color: #555; font-style: italic;">
-                Through Knowledge • Through Partnership • For Humanity
-            </p>
+    <!-- ==========================================
+     IPPM FOOTER — White on Blue + Spam Protection
+     ========================================== -->
 
-            <hr>
+<style>
+  /* ── Footer Base ── */
+  footer {
+    background: linear-gradient(160deg, #0d2f5e 0%, #1a5276 60%, #1f618d 100%);
+    color: #ffffff;
+    padding: 50px 20px 30px;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    text-align: center;
+  }
 
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; text-align: left; margin: 20px 0;">
-                <div>
-                    <h4 style="color: #1a5276; margin-bottom: 10px;">📍 Address</h4>
-                    <p style="font-size: 0.95rem; color: #555; line-height: 1.6;">
-                        Sheraton Hotel,<br>
-                        30 Mobolaji Bank Anthony Way,<br>
-                        Ikeja, Lagos, Nigeria.
-                    </p>
-                </div>
-                <div>
-                    <h4 style="color: #1a5276; margin-bottom: 10px;">📞 Telephone</h4>
-                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
-                        <a href="tel:+2347052526342" style="color: #1a5276; text-decoration: none;">+234 705 252 6342</a><br>
-                        <a href="tel:+2347066678914" style="color: #1a5276; text-decoration: none;">+234 706 667 8914</a><br>
-                        <a href="tel:+2348028198223" style="color: #1a5276; text-decoration: none;">+234 802 819 8223</a>
-                    </p>
-                </div>
-                <div>
-                    <h4 style="color: #1a5276; margin-bottom: 10px;">✉ Email</h4>
-                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
-                        <!-- ✅ PUBLIC-FACING (Spam-resistant: forwards internally) -->
-                        <a href="mailto:info@ippm.org.ng" style="color: #1a5276; text-decoration: none;">info@ippm.org.ng</a><br>
-                        <small style="color: #888;">For all official correspondence</small>
-                    </p>
-                </div>
-                <div>
-                    <h4 style="color: #1a5276; margin-bottom: 10px;">🌐 Website</h4>
-                    <p style="font-size: 0.95rem; color: #555; line-height: 1.8;">
-                        <a href="https://www.ippm.org.ng" style="color: #1a5276; text-decoration: none;">www.ippm.org.ng</a>
-                    </p>
-                </div>
-            </div>
+  .footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 
-            <hr>
+  /* ── Logo ── */
+  .footer-logo {
+    max-width: 110px;
+    margin-bottom: 22px;
+    filter: brightness(0) invert(1) drop-shadow(0 2px 6px rgba(0,0,0,0.4));
+  }
 
-            <p style="font-size: 0.85rem; color: #888; margin-top: 15px;">
-                &copy; 2026 Institute of Public Peace and Management (IPPM). All Rights Reserved.
-            </p>
-            <p style="font-size: 0.8rem; color: #999; margin-top: 5px;">
-                Professional Excellence • Sustainable Peace • Global Impact
-            </p>
-        </div>
-    </footer>
+  /* ── Org Name ── */
+  footer h3 {
+    color: #ffffff;
+    font-size: 1.45rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 0.3px;
+    text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  }
+
+  /* ── Taglines ── */
+  .footer-tagline-main {
+    font-size: 1.15rem;
+    color: #f0d080;
+    font-weight: 600;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+  }
+
+  .footer-tagline-sub {
+    font-size: 0.95rem;
+    color: #aed6f1;
+    font-style: italic;
+    margin-bottom: 0;
+  }
+
+  /* ── Divider ── */
+  footer hr {
+    border: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    margin: 22px auto;
+    max-width: 700px;
+  }
+
+  /* ── Info Grid ── */
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+    gap: 24px;
+    text-align: left;
+    margin: 24px 0;
+  }
+
+  .footer-grid-item h4 {
+    color: #f0d080;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  /* SVG icon baseline fix */
+  .footer-grid-item h4 svg {
+    flex-shrink: 0;
+    vertical-align: middle;
+  }
+
+  .footer-grid-item p {
+    font-size: 0.93rem;
+    color: #d6eaf8;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  /* ── Links (Phone / Email / Website) ── */
+  .footer-grid-item a {
+    color: #aed6f1;
+    text-decoration: none;
+    transition: color 0.2s ease, text-decoration 0.2s ease;
+  }
+
+  .footer-grid-item a:hover {
+    color: #f0d080;
+    text-decoration: underline;
+  }
+
+  /* ── Protected contact placeholders ── */
+  .protected-contact {
+    color: #aed6f1;
+    font-size: 0.93rem;
+    line-height: 1.75;
+  }
+
+  .noscript-notice {
+    color: #f1948a;
+    font-size: 0.85rem;
+    font-style: italic;
+  }
+
+  /* ── Bottom copyright bar ── */
+  .footer-bottom {
+    margin-top: 10px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+    padding-top: 18px;
+  }
+
+  .footer-bottom p {
+    font-size: 0.82rem;
+    color: #aed6f1;
+    margin: 4px 0;
+  }
+
+  .footer-bottom .footer-bottom-tagline {
+    font-size: 0.78rem;
+    color: #7fb3d3;
+    letter-spacing: 0.8px;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 600px) {
+    footer h3 { font-size: 1.15rem; }
+    .footer-grid { grid-template-columns: 1fr; }
+    .footer-grid-item { text-align: center; }
+    .footer-grid-item h4 { justify-content: center; }
+  }
+</style>
+
+<!-- ========== FOOTER HTML ========== -->
+<footer>
+  <div class="footer-content">
+
+    <!-- Logo -->
+    <img
+      src="images/ippm-logo.png"
+      alt="IPPM Logo"
+      class="footer-logo"
+    >
+
+    <!-- Organisation Name -->
+    <h3>Institute of Public Peace and Management (IPPM)</h3>
+
+    <!-- Taglines -->
+    <p class="footer-tagline-main">Peace &bull; Progress &bull; Prosperity</p>
+    <p class="footer-tagline-sub">Through Knowledge &bull; Through Partnership &bull; For Humanity</p>
+
+    <hr>
+
+    <!-- Contact Info Grid -->
+    <div class="footer-grid">
+
+      <!-- Address -->
+      <div class="footer-grid-item">
+        <h4>
+          <!-- Location pin icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f0d080" viewBox="0 0 24 24">
+            <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+          </svg>
+          Address
+        </h4>
+        <p>
+          Sheraton Hotel,<br>
+          30 Mobolaji Bank Anthony Way,<br>
+          Ikeja, Lagos, Nigeria.
+        </p>
+      </div>
+
+      <!-- Telephone — Spam Protected -->
+      <div class="footer-grid-item">
+        <h4>
+          <!-- Phone icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f0d080" viewBox="0 0 24 24">
+            <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.38 2.33.58 3.58.58a1 1 0 011 1v3.5a1 1 0 01-1 1C10.61 22 2 13.39 2 4a1 1 0 011-1H6.5a1 1 0 011 1c0 1.26.2 2.47.58 3.58a1 1 0 01-.24 1.01l-2.22 2.2z"/>
+          </svg>
+          Telephone
+        </h4>
+        <p id="footer-phones">
+          <noscript><span class="noscript-notice">Enable JavaScript to view contact numbers.</span></noscript>
+        </p>
+      </div>
+
+      <!-- Email — Spam Protected -->
+      <div class="footer-grid-item">
+        <h4>
+          <!-- Envelope icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f0d080" viewBox="0 0 24 24">
+            <path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+          Email
+        </h4>
+        <p id="footer-email">
+          <noscript><span class="noscript-notice">Enable JavaScript to view email.</span></noscript>
+        </p>
+      </div>
+
+      <!-- Website — Spam Protected -->
+      <div class="footer-grid-item">
+        <h4>
+          <!-- Globe icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#f0d080" viewBox="0 0 24 24">
+            <path d="M12 2a10 10 0 100 20A10 10 0 0012 2zm-1 17.93V18a1 1 0 00-1-1H8l-2-2v-2l2-2h3l1-1V8l-1-1H9L7 9H5.08A8.001 8.001 0 0111 4.07V5a1 1 0 001 1h1l1 1v1l-1 1h-1l-1 1v2l1 1h2v1l-1 1v3.93zM14 19.5v-1.5l2-2h1l2 2a8.05 8.05 0 01-5 1.5z"/>
+          </svg>
+          Website
+        </h4>
+        <p id="footer-website">
+          <noscript><span class="noscript-notice">Enable JavaScript to view website.</span></noscript>
+        </p>
+      </div>
+
+    </div>
+    <!-- /Contact Grid -->
+
+    <hr>
+
+    <!-- Copyright -->
+    <div class="footer-bottom">
+      <p>&copy; 2026 Institute of Public Peace and Management (IPPM). All Rights Reserved.</p>
+      <p class="footer-bottom-tagline">Professional Excellence &bull; Sustainable Peace &bull; Global Impact</p>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ========== SPAM PROTECTION SCRIPT ========== -->
 
     <!-- ==========================================
      JAVASCRIPT FILES
